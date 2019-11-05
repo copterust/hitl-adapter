@@ -22,4 +22,4 @@ make -j4
 sudo make install
 ```
 4. On a separate terminal run ```gazebo --verbose worlds/iris_arducopter_runway.world```
-5. Next run ```cargo build``` and watch telemetry while copter flies away.
+5. Next run ```cargo run``` and watch telemetry while copter flies away.
