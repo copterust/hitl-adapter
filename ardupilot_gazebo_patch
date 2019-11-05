@@ -1,0 +1,20 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index b6e4860..33b194e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -126,6 +126,8 @@ include_directories(
+         ${GAZEBO_INCLUDE_DIRS}
+         )
+ 
++include_directories(${ADDITIONAL_INCLUDE_DIRS} ${OGRE_INCLUDE_DIRS}/Paging)
++
+ link_libraries(
+         ${GAZEBO_LIBRARIES}
+         )
+@@ -156,4 +158,4 @@ install(TARGETS ArduCopterIRLockPlugin DESTINATION ${GAZEBO_PLUGIN_PATH})
+ install(TARGETS ArduPilotPlugin DESTINATION ${GAZEBO_PLUGIN_PATH})
+ 
+ install(DIRECTORY models DESTINATION ${GAZEBO_MODEL_PATH}/..)
+-install(DIRECTORY worlds DESTINATION ${GAZEBO_MODEL_PATH}/..)
+\ No newline at end of file
++install(DIRECTORY worlds DESTINATION ${GAZEBO_MODEL_PATH}/..)
