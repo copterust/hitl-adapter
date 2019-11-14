@@ -65,8 +65,8 @@ fn main() {
                 let gyro = packet.angular;
                 let accel = packet.linear;
                 let (dcm, _gyro_biases) = dcmimu.update(
-                    (gyro[0] as f32, gyro[0] as f32, gyro[0] as f32),
-                    (accel[0] as f32, accel[0] as f32, accel[0] as f32),
+                    (gyro[0] as f32, gyro[1] as f32, gyro[2] as f32),
+                    (accel[0] as f32, accel[1] as f32, accel[2] as f32),
                     dt,
                 );
                 println!(
