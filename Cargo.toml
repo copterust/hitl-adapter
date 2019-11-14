@@ -5,3 +5,4 @@ authors = ["Alexander Zhuravlev"]
 edition = "2018"
 
 [dependencies]
+dcmimu = "0.2.1"
